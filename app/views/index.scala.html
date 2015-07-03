@@ -1,0 +1,28 @@
+@(message:String)
+
+<form action="@routes.Application.createActor()">
+    <input type="text" name="name" placeholder="actor0">
+    <button type="submit">CREATE ACTOR</button>
+</form>
+<form action="@routes.Application.askAwait()">
+    <button type="submit">ASK AWAIT</button>
+</form>
+<form action="@routes.Application.askFutures()">
+    <button type="submit">ASK FUTURES</button>
+</form>
+<form action="@routes.Application.inboxSend()">
+    <button type="submit">INBOX SEND</button>
+</form>
+<form action="@routes.Application.multipleAskAwait()">
+    <button type="submit">MULTIPLE ASK AWAIT (probe 1s)</button>
+</form>
+<form action="@routes.Application.multipleAskFutures()">
+    <button type="submit">MULTIPLE ASK FUTURES (probe 1s)</button>
+</form>
+<form action="@routes.Application.multipleInboxSend()">
+    <button type="submit">MULTIPLE INBOX SEND (probe 1s)</button>
+</form>
+
+
+@message
+
